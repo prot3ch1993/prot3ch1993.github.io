@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ADMIN</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .container{
+                width: 50%;
+               text-align: center;
+            }
+           
+            .resellerlogin label, .signupup label{
+                display: inline;
+            }
+            .reseller-form {
+                display:flex;
+                grid-template-areas: 
+                "resellerlogin"
+                "signup"
+                "submit submit"
+                ;
+                grid-template-columns: auto auto;
+                grid-template-rows: repeat(3, auto) ;
+                grid-gap:1em;
+                color: rgb(22, 1, 1);
+                font-size: larger;
+                
+            }
+            .resellerlogin{
+                grid-area: resellerlogin;
+
+            }
+           
+            .signup{
+                grid-area: signup;
+
+            }
+           
+            .submit{
+                grid-area: submit;
+
+            }
+            .reseller-form input:not([type="checkbox"]):not([type="radio"])
+            , textarea, select {
+                width: 100%;
+                padding: 1em;
+               
+               
+            }
+                
+           
+            
+
+        </style>
+    </head>
+    <body background="tower.jpg" style="background-size: cover;">
+        <div class="container">
+        <div>
+            <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center; position: fixed;">QUEENZONE TELECOM</h1>
+        </div>
+        <br><br>
+        <form class="reseller-form">
+        <fieldset class="resellerlogin">
+            <br>
+            <legend><h1 style="text-align: center;">TICKET REFUND </h1></legend><br>
+            
+            <input type="text" name="fullname" placeholder="FULL NAME" required>
+            <input type="text" name="location" placeholder="LOCATION" required>
+            <p>Date purchase<input type="date" required></p>
+            <h2>REASON</h2>
+            <select name="dropdown" required>
+                <option value="invalid" selected>INVALID</option>
+                <option value="nointernetaccess">NO INTERNET ACCESS</option>
+                <option value="wifinamenotvisible">WIFI NAME NOT VISIBLE</option>
+                <option value="others">OTHERS</option>
+            </select>
+            <h2>RESELLER</h2>
+            <select name="dropdown" required>
+                <option value="select" selected>Select</option>
+                <option value="Jen P">Jen P</option>
+                <option value="J. Emil">J. Emil</option>
+                <option value="Duday Store">Duday Store</option>
+            </select>
+            <h2>TICKET VALUE</h2>
+            <input type="text" name="text" placeholder="e.g Ticket 1 HOUR" required>
+            <h2>UPLOAD TICKET</h2>
+            <b>Front</b>
+            <input type="file" name="fileupload" accept="image/*" required> <br>
+            <b>Back</b>
+            <input type="file" name="fileupload" accept="image/*" required> <br>
+            <input type="submit">
+        </fieldset>
+        </form>
+
+        
+    </div>
+    </body>
+</html>

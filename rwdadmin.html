@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ADMIN</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .resellerlogin label, .signupup label{
+                display: inline;
+            }
+            .reseller-form {
+                display:flex;
+                grid-template-areas: 
+                "resellerlogin"
+                "signup"
+                "submit submit"
+                ;
+                grid-template-columns: auto auto;
+                grid-template-rows: repeat(3, auto) ;
+                grid-gap:1em;
+                color: rgb(22, 1, 1);
+                font-size: larger;
+            }
+            .resellerlogin{
+                grid-area: resellerlogin;
+
+            }
+           
+            .signup{
+                grid-area: signup;
+
+            }
+           
+            .submit{
+                grid-area: submit;
+
+            }
+            .reseller-form input:not([type="checkbox"]):not([type="radio"])
+            , textarea, select {
+                width: 100%;
+                padding: 1em;
+                margin: 0.5em 0em;
+            }
+                
+           
+            
+
+        </style>
+    </head>
+    <body background="tower.jpg" style="background-size: cover;">
+        <div>
+            <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center; position: fixed;">QUEENZONE TELECOM</h1>
+        </div>
+        <br><br>
+        <form class="reseller-form">
+        <fieldset class="resellerlogin">
+            <legend><h1 style="text-align: center;">ADMIN </h1></legend><br>
+            <label for="Email">Email</label>
+            <input type="text" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+            <input type="submit" name="signin" value="LOG IN">
+        </fieldset>
+        </form>
+
+        
+   
+    </body>
+</html>

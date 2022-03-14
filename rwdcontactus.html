@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>form Grid</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .personal label, .pickup label{
+                display: block;
+            }
+            .booking-form {
+                display:grid;
+                grid-template-areas: 
+                "personal vehicle"
+                "pickup extras"
+                "instruction instruction"
+                "submit submit"
+                ;
+                grid-template-columns: auto auto;
+                grid-template-rows: repeat(3, auto) ;
+                grid-gap:1em;
+                color: rgb(22, 1, 1);
+                font-size: larger;
+            }
+            .personal{
+                grid-area: personal;
+
+            }
+            .vehicle{
+                grid-area: vehicle;
+
+            }
+            .pickup{
+                grid-area: pickup;
+
+            }
+            .extras{
+                grid-area: extras;
+
+            }
+            .submit{
+                grid-area: submit;
+
+            }
+            .booking-form input:not([type="checkbox"]):not([type="radio"])
+            , textarea, select {
+                width: 100%;
+                padding: 1em;
+                margin: 0.5em 0em;
+            }
+                
+            .instruction{
+                grid-area: instruction ;
+            }
+            
+
+        </style>
+    </head>
+    <body background="tower.jpg" style="background-size: cover;">
+        <div>
+            <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center; position: fixed;">QUEENZONE TELECOM</h1>
+        </div>
+        <br><br>
+        <form class="booking-form">
+       
+    
+        <fieldset class="vehicle">
+            <legend>CONTACT US:<br>
+                <img src="contact2.jpg" width="300">
+            </legend>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            Message us: <br/>
+            <textarea rows="5" cols="20" name="message">
+                Enter Message here
+            </textarea>
+            <br>
+            <input type="submit">
+        </fieldset>
+        
+       
+    </form>
+    </body>
+</html>
