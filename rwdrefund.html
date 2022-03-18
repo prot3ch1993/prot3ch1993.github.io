@@ -21,10 +21,8 @@
                text-align: center;
             }
            
-            .resellerlogin label, .signupup label{
-                display: inline;
-            }
-            .reseller-form {
+            
+            .refund-form {
                 display:flex;
                 grid-template-areas: 
                 "resellerlogin"
@@ -38,34 +36,21 @@
                 font-size: larger;
                 
             }
-            .resellerlogin{
-                grid-area: resellerlogin;
+            .refundlogin{
+                grid-area: refundlogin;
 
             }
-           
-            .signup{
-                grid-area: signup;
-
-            }
-           
-            .submit{
-                grid-area: submit;
-
-            }
-            .reseller-form input:not([type="checkbox"]):not([type="radio"])
+            .refund-form input:not([type="checkbox"]):not([type="radio"])
             , textarea, select {
                 width: 100%;
                 padding: 1em;
                
                
             }
-                
-           
-            
 
         </style>
     </head>
-    <body background="tower.jpg" style="background-size: cover;">
+    <body background="towern.jpg" style="background-size: cover;background-repeat: no-repeat;">
         <div class="container">
         <div>
             <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center;">QUEENZONE TELECOM</h1>
@@ -84,7 +69,7 @@
            
     
             <div class="nav-item dropdown">
-                <a href="#" class="nav-item nav-link dropdown-toggle active"
+                <a href="profile" class="nav-item nav-link dropdown-toggle active"
                 data-bs-toggle="dropdown">Profile</a>
     
                 <div class="dropdown-menu">
@@ -97,8 +82,8 @@
     
         </nav>
         <br><br>
-        <form class="reseller-form">
-        <fieldset class="resellerlogin">
+        <form class="refund-form">
+        <fieldset class="refundlogin">
             <br>
             <legend><h1 style="text-align: center;">TICKET REFUND </h1></legend><br>
             

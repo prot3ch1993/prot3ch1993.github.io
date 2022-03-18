@@ -16,61 +16,27 @@
             *{
                 box-sizing:border-box;
             }
-            .personal label, .pickup label{
-                display: block;
-            }
+            
             .booking-form {
                 display:grid;
                 grid-template-areas: 
-                "personal vehicle"
-                "pickup extras"
-                "instruction instruction"
-                "submit submit"
+                "contactus"
                 ;
-                grid-template-columns: auto auto;
-                grid-template-rows: repeat(3, auto) ;
-                grid-gap:1em;
                 color: rgb(22, 1, 1);
                 font-size: larger;
+                margin: 50px;
             }
-            .personal{
-                grid-area: personal;
+            .contactus{
+                grid-area: contactus;
 
-            }
-            .vehicle{
-                grid-area: vehicle;
-
-            }
-            .pickup{
-                grid-area: pickup;
-
-            }
-            .extras{
-                grid-area: extras;
-
-            }
-            .submit{
-                grid-area: submit;
-
-            }
-            .booking-form input:not([type="checkbox"]):not([type="radio"])
-            , textarea, select {
-                width: 100%;
-                padding: 1em;
-                margin: 0.5em 0em;
-            }
-                
-            .instruction{
-                grid-area: instruction ;
             }
             
-
         </style>
     </head>
-    <body background="tower.jpg" style="background-size: cover;">
-        <div>
+    <body background="towern.jpg" style="background-size: cover; background-repeat: no-repeat;">
+        <header>
             <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center;">QUEENZONE TELECOM</h1>
-        </div>
+        </header>
         <nav class="nav nav-pills justify-content-center">
 
             <a href="index.html" class="nav-item nav-link active">
@@ -92,32 +58,28 @@
                 <a href="rwdadmin.html" class="dropdown-item">ADMIN</a>
                 <a href="rwdreseller.html" class="dropdown-item">RESELLER</a>
                 </div>
-                
-    
             </div>
-    
         </nav>
         <br><br>
         <form class="booking-form">
-       
-    
-        <fieldset class="vehicle">
-            <legend>CONTACT US:<br>
-                <img src="contact2.jpg" width="300">
+        <fieldset class="contactus">
+            <legend>
+                <img src="contact2.jpg" width="500">
             </legend>
             <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email"><br>
             Message us: <br/>
-            <textarea rows="5" cols="20" name="message">
+            <textarea rows="5" cols="50"  name="message">
                 Enter Message here
             </textarea>
             <br>
             <input type="submit">
         </fieldset>
     </form>
-    <div>
+
+    <footer>
         <P style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center;">Powered by: QUEENZONE IT SOLUTIONS</p>
-    </div>
+        </footer>
 
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

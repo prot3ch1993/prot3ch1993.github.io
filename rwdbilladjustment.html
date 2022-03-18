@@ -20,7 +20,7 @@
             .resellerlogin label, .signupup label{
                 display: inline;
             }
-            .reseller-form {
+            .billadjustment-form {
                 display:flex;
                 grid-template-areas: 
                 "resellerlogin"
@@ -33,25 +33,17 @@
                 color: rgb(22, 1, 1);
                 font-size: larger;
             }
-            .resellerlogin{
+            .billadjustment{
                 grid-area: resellerlogin;
 
             }
            
-            .signup{
-                grid-area: signup;
-
-            }
-           
-            .submit{
-                grid-area: submit;
-
-            }
-            .reseller-form input:not([type="checkbox"]):not([type="radio"])
+            
+            .billadjustment-form input:not([type="checkbox"]):not([type="radio"])
             , textarea, select {
-                width: 100%;
+                width: 50%;
                 padding: 1em;
-                margin: 0.5em 0em;
+                margin: 20px;
             }
                 
            
@@ -59,7 +51,7 @@
 
         </style>
     </head>
-    <body background="tower.jpg" style="background-size: cover;">
+    <body background="towern.jpg" style="background-size: cover;background-repeat: no-repeat;">
         <div>
             <h1 style="background-color: rgb(72, 42, 42);color: rgb(245, 237, 237);text-align: center;">QUEENZONE TELECOM</h1>
         </div>
@@ -96,12 +88,14 @@
             
       
         <br><br>
-        <form class="reseller-form">
-        <fieldset class="resellerlogin">
-            <legend><h1 style="text-align: center;">BILL ADJUSTMENT</h1></legend><br>
-            Full Name:<input type="text" required>
-            Account Number:<input type="text" required>
-            Pls. Upload statement of Account:<input type="file" name="fileupload" accept="image/*" required> <br>
+        <form class="billadjustment-form">
+        <fieldset class="billadjustment">
+            <legend><h1 style="text-align: center; background-color: blanchedalmond; margin: 20px;">BILL ADJUSTMENT</h1></legend><br>
+            <input type="text" placeholder="Account Name:" required>
+            <input type="text" placeholder="Account Number" required>
+            <br>
+            <h4 style="margin: 20px;background-color: blanchedalmond;">Pls. Upload statement of Account:</h4><br>
+            <input type="file" name="fileupload" accept="image/*" required> <br>
             <input type="submit" name="submit" value="SUBMIT">
         </fieldset>
         </form>
